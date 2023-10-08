@@ -30,16 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDKCN = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cmbFaculty = new System.Windows.Forms.ComboBox();
-            this.cmbMajor = new System.Windows.Forms.ComboBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cmbFaculty = new System.Windows.Forms.ComboBox();
+            this.cmbMajor = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDKCN)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,50 +68,6 @@
             this.dgvDKCN.RowTemplate.Height = 24;
             this.dgvDKCN.Size = new System.Drawing.Size(707, 219);
             this.dgvDKCN.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(103, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Khoa";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(103, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Chuyên ngành";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(78, 409);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Register";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // cmbFaculty
-            // 
-            this.cmbFaculty.FormattingEnabled = true;
-            this.cmbFaculty.Location = new System.Drawing.Point(213, 80);
-            this.cmbFaculty.Name = "cmbFaculty";
-            this.cmbFaculty.Size = new System.Drawing.Size(178, 24);
-            this.cmbFaculty.TabIndex = 4;
-            this.cmbFaculty.SelectedIndexChanged += new System.EventHandler(this.cmbFaculty_SelectedIndexChanged);
-            // 
-            // cmbMajor
-            // 
-            this.cmbMajor.FormattingEnabled = true;
-            this.cmbMajor.Location = new System.Drawing.Point(213, 130);
-            this.cmbMajor.Name = "cmbMajor";
-            this.cmbMajor.Size = new System.Drawing.Size(178, 24);
-            this.cmbMajor.TabIndex = 4;
             // 
             // Column1
             // 
@@ -147,6 +103,51 @@
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.Width = 125;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(103, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Khoa";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(103, 138);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Chuyên ngành";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(78, 409);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 29);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Register";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cmbFaculty
+            // 
+            this.cmbFaculty.FormattingEnabled = true;
+            this.cmbFaculty.Location = new System.Drawing.Point(213, 80);
+            this.cmbFaculty.Name = "cmbFaculty";
+            this.cmbFaculty.Size = new System.Drawing.Size(178, 24);
+            this.cmbFaculty.TabIndex = 4;
+            this.cmbFaculty.SelectedIndexChanged += new System.EventHandler(this.cmbFaculty_SelectedIndexChanged);
+            // 
+            // cmbMajor
+            // 
+            this.cmbMajor.FormattingEnabled = true;
+            this.cmbMajor.Location = new System.Drawing.Point(213, 130);
+            this.cmbMajor.Name = "cmbMajor";
+            this.cmbMajor.Size = new System.Drawing.Size(178, 24);
+            this.cmbMajor.TabIndex = 4;
             // 
             // frmDKCN
             // 

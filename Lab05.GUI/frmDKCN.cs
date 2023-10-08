@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using Lab05.BUS;
 using Lab05.DAL.Entities;
@@ -70,5 +70,17 @@ namespace Lab05.GUI
             }
         }
 
+        private void Showf1()
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Thread thread = new Thread(new ThreadStart(Showf1)); // Khởi tạo luồng mới
+            thread.Start();
+            this.Close();
+        }
     }
 }

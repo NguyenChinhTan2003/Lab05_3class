@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using Lab05.BUS;
 using Lab05.DAL.Entities;
@@ -81,12 +81,18 @@ namespace Lab05.GUI
                 listStudents = studentService.GetALL();
             BindGird(listStudents);
         }
-
-        private void đăngKýChuyênNgànhToolStripMenuItem_Click(object sender, EventArgs e)
+         private void show()
         {
             frmDKCN f2 = new frmDKCN();
             f2.ShowDialog();
+            
+        }
+        private void đăngKýChuyênNgànhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread thread = new Thread(new ThreadStart(show)); // Khởi tạo luồng mới
+            thread.Start();
             this.Close();
+
         }
     }
 }
