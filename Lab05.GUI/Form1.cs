@@ -72,5 +72,21 @@ namespace Lab05.GUI
             dgview.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
+        private void ckbCN_CheckedChanged(object sender, EventArgs e)
+        {
+            var listStudents = new List<Student>();
+            if (this.ckbCN.Checked)
+                listStudents = studentService.GetAllHasMoMajor();
+            else
+                listStudents = studentService.GetALL();
+            BindGird(listStudents);
+        }
+
+        private void đăngKýChuyênNgànhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDKCN f2 = new frmDKCN();
+            f2.ShowDialog();
+            this.Close();
+        }
     }
 }
