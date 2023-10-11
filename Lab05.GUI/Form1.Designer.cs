@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngKýChuyênNgànhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvQLSV = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,7 +53,6 @@
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtMaSV = new System.Windows.Forms.TextBox();
             this.ckbCN = new System.Windows.Forms.CheckBox();
-            this.đăngKýChuyênNgànhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLSV)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -66,7 +66,7 @@
             this.chứcNăngToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1069, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1069, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,6 +78,13 @@
             this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
             this.chứcNăngToolStripMenuItem.Text = "&Chức Năng";
             // 
+            // đăngKýChuyênNgànhToolStripMenuItem
+            // 
+            this.đăngKýChuyênNgànhToolStripMenuItem.Name = "đăngKýChuyênNgànhToolStripMenuItem";
+            this.đăngKýChuyênNgànhToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.đăngKýChuyênNgànhToolStripMenuItem.Text = "&Đăng Ký chuyên ngành";
+            this.đăngKýChuyênNgànhToolStripMenuItem.Click += new System.EventHandler(this.đăngKýChuyênNgànhToolStripMenuItem_Click);
+            // 
             // dgvQLSV
             // 
             this.dgvQLSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -87,12 +94,14 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dgvQLSV.Location = new System.Drawing.Point(386, 107);
+            this.dgvQLSV.Location = new System.Drawing.Point(380, 107);
             this.dgvQLSV.Name = "dgvQLSV";
             this.dgvQLSV.RowHeadersWidth = 51;
             this.dgvQLSV.RowTemplate.Height = 24;
+            this.dgvQLSV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvQLSV.Size = new System.Drawing.Size(677, 345);
             this.dgvQLSV.TabIndex = 1;
+            this.dgvQLSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQLSV_CellContentClick);
             // 
             // Column1
             // 
@@ -221,6 +230,7 @@
             this.btndele.TabIndex = 5;
             this.btndele.Text = "Delete";
             this.btndele.UseVisualStyleBackColor = true;
+            this.btndele.Click += new System.EventHandler(this.btndele_Click);
             // 
             // btnadd
             // 
@@ -230,6 +240,7 @@
             this.btnadd.TabIndex = 5;
             this.btnadd.Text = "Add/ Update";
             this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // btnaddAvatar
             // 
@@ -279,13 +290,6 @@
             this.ckbCN.Text = "Chưa đk chuyên ngành";
             this.ckbCN.UseVisualStyleBackColor = true;
             this.ckbCN.CheckedChanged += new System.EventHandler(this.ckbCN_CheckedChanged);
-            // 
-            // đăngKýChuyênNgànhToolStripMenuItem
-            // 
-            this.đăngKýChuyênNgànhToolStripMenuItem.Name = "đăngKýChuyênNgànhToolStripMenuItem";
-            this.đăngKýChuyênNgànhToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
-            this.đăngKýChuyênNgànhToolStripMenuItem.Text = "&Đăng Ký chuyên ngành";
-            this.đăngKýChuyênNgànhToolStripMenuItem.Click += new System.EventHandler(this.đăngKýChuyênNgànhToolStripMenuItem_Click);
             // 
             // Form1
             // 

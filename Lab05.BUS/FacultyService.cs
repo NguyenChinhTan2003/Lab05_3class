@@ -16,4 +16,7 @@ namespace Lab05.BUS
             return context.Faculties.ToList();
         }
     }
+  
+    
+
 }
