@@ -49,7 +49,7 @@ namespace Lab05.GUI
                 var listMajor = majorSevice.GetAllByFaculty(selectedFaculty.FacultyID);
                 FillMajorCombobox(listMajor);
                 var listStudents = studentService.GetAllHasNoMojor(selectedFaculty.FacultyID);
-
+                BindGird(listStudents);
 
             }
 
